@@ -1,6 +1,10 @@
 <?php
 
  include_once 'header.php';
+ session_start();
+ if(!isset($_SESSION['u_uid'])){
+   header("Location: index.php");
+}
 ?>
 
 <section class="main-container">
